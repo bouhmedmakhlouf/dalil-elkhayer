@@ -1,4 +1,3 @@
-
 .body{
     background-image:url(image5.jpg);
     background-repeat:no-repeat;
@@ -243,3 +242,198 @@ margin-top: 200px;
 
 
 .wave-text span:nth-child(1) { animation-delay: 0s; }
+
+
+/* =========================
+   PHONE RESPONSIVE
+   لا تغيّر أي شيء في الكمبيوتر
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* الخلفية */
+    .body {
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+
+    /* العنوان الرئيسي */
+    .h1 {
+        font-size: 55px;
+        text-align: center;
+        margin: 20px 0;
+        margin-right: 10px;
+    }
+
+    /* العنوان الثاني */
+    .h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-left: 0;
+        top: 0;
+        position: relative;
+    }
+
+    /* الحاوية الرئيسية */
+    .sidee {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+    /* العمود الأول */
+    .side1 {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0;
+        gap: 20px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* العمود الثاني */
+    .side2 {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0;
+        gap: 20px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* المربعات */
+    .box {
+        width: min(300px, 90vw);
+        height: auto;
+        min-height: 50px;
+        font-size: 28px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 5px 10px;
+    }
+    /* المستطيل */
+    .sidee2 {
+        width: min(600px, 90vw);
+        height: auto;
+        min-height: 45px;
+        font-size: 28px;
+        margin: 0 auto;
+        top: 0;
+        box-sizing: border-box;
+    }
+
+    /* side */
+    .side {
+        width: min(350px, 90vw);
+        font-size: 30px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+    /* Instagram */
+    .instagram-link {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 30px auto;
+        width: fit-content;
+    }
+
+    .instagram-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .instagram-username {
+        font-size: 20px;
+    }
+    /* YouTube */
+    .youtube-link {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 30px auto;
+        width: fit-content;
+    }
+
+    .youtube-icon {
+        width: 80px;
+        height: 85px;
+    }
+
+    .youtube-name {
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    /* TikTok */
+    .tiktok-link {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 30px auto;
+        width: fit-content;
+    }
+
+    .tiktok-icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .tiktok-name {
+        font-size: 20px;
+    }
+
+    /* النص المتحرك */
+    .wave-text {
+        font-size: 35px;
+        margin-top: 30px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .wave-text span {
+        animation: wave 1.2s ease-in-out infinite;
+    }
+}
+/* شاشات الهاتف الصغيرة جدًا */
+@media screen and (max-width: 400px) {
+
+    .h1 {
+        font-size: 42px;
+    }
+
+    .h2 {
+        font-size: 24px;
+    }
+
+    .box {
+        width: 90vw;
+        font-size: 24px;
+    }
+
+    .side {
+        width: 90vw;
+        font-size: 26px;
+    }
+
+    .wave-text {
+        font-size: 28px;
+    }
+
+}

@@ -1,4 +1,4 @@
-@media (max-width :768px){
+
 .body{
     background-image:url(image5.jpg);
     background-repeat:no-repeat;
@@ -243,4 +243,3 @@ margin-top: 200px;
 
 
 .wave-text span:nth-child(1) { animation-delay: 0s; }
-}
